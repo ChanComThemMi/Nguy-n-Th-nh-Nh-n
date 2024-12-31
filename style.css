@@ -1,0 +1,86 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .banner h1 {
+    animation: slide-in 3s infinite alternate;
+}
+
+@keyframes slide-in {
+    from {
+        margin-left: -100px;
+    }
+    to {
+        margin-left: 100px;
+    }
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.tour {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tour-item {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tour-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.tour-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tour-item p {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
